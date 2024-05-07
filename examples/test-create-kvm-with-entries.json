@@ -1,0 +1,9 @@
+{
+    "name": "KVM-Name",
+    "entries": [
+        {
+            "name": "name",
+            "value": "value"
+        }
+    ]
+}
