@@ -1,5 +1,4 @@
-const conn = require("./conn");
-
+// docs: https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.environments.keyvaluemaps
 let create = (conn,kvmName) => {
     console.log("Creating KVM...\r\n");
     let options = {
@@ -10,8 +9,8 @@ let create = (conn,kvmName) => {
             'Authorization': `Bearer ${conn.ACCESS_TOKEN}`
         },
         body: {
-            "name": kvmName,
-            "encrypted": false
+            name: kvmName,
+            encrypted: false
         }
     };
 

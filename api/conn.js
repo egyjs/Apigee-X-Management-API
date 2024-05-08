@@ -1,10 +1,11 @@
-// to get "API_KEY", go to https://console.cloud.google.com/apis/credentials
-// to get "ACCESS_TOKEN", run this command in terminal: gcloud auth login && gcloud auth print-access-token
+// copy .env.example to .env and add your values
+require('dotenv').config()
+const env = process.env;
 const conn = {
-    org: "chi-integration-layer",
-    env: "default-chi-development",
-    API_KEY: "",
-    ACCESS_TOKEN: ""
+    org: env.ORGANIZATION_NAME,
+    env: env.ENVIRONMENT_NAME,
+    API_KEY: env.API_KEY,
+    ACCESS_TOKEN: env.ACCESS_TOKEN
 };
 
 module.exports = conn;
