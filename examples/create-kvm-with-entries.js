@@ -1,5 +1,6 @@
 /**
  * Made by: <AbdulRahman El-zahaby>
+ * run: node examples/create-kvm-with-entries.js json-file-path.json
  */
 let fs = require('fs');
 let conn = require('../api/conn.js');
