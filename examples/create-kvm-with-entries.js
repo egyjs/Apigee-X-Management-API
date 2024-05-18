@@ -5,7 +5,7 @@
 let fs = require('fs');
 let conn = require('../api/conn.js');
 let kvm = require('../api/kvm.js');
-let kvmEntry = require('../api/kvm_entries.js');
+let kvmEntry = require('../api/kvm_entry.js');
 
 
 
